@@ -8,7 +8,7 @@
 class TorqueSpring
 {
 public:
-    TorqueSpring(float initialAngle, float springStiffness, float springDamping) :
+    TorqueSpring(float springStiffness, float springDamping) :
         m_currentAngle(0),
         m_stiffness(springStiffness),
         m_damping(springDamping),

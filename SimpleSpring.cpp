@@ -44,7 +44,7 @@ int main()
     sf::Vector2i mousePos = sf::Mouse::getPosition(window);
     CompressionSpring spring(sf::Vector2f(mousePos.x, mousePos.y), 25.f, 25.f, 5.f);
     // torque spring
-    TorqueSpring torqueSpring(0, 10, 10);
+    TorqueSpring torqueSpring(10, 10);
     // offset angle of the torque spring
     sf::Vector2f preOffset = spring.getAnchorPoint() - spring.getEndPoint();
 
