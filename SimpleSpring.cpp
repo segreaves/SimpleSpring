@@ -74,7 +74,7 @@ int main()
         // get current offset
         const sf::Vector2f offset = spring.getAnchorPoint() - spring.getEndPoint();
         // get angle (in radians) between previous offset and current offset
-        float delta = getSignedAngle(preOffset, offset);
+        const float delta = getSignedAngle(preOffset, offset);
         // update torque spring angle
         torqueSpring.rotate(-delta);
         // update previous offset
