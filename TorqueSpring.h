@@ -25,7 +25,7 @@ public:
 
         // update angular velocity and angle
         m_angularVelocity += torque * dt;
-        m_currentAngle += m_angularVelocity * dt;
+        rotate(m_angularVelocity * dt);
     }
 
     void setAngle(float angle)

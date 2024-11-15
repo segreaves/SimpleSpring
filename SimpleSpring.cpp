@@ -70,9 +70,9 @@ int main()
         spring.setAnchorPoint(mousePosFloat);
 
         // offset angle of the torque spring
-        float angle = atan2(spring.getEndPoint().y - spring.getAnchorPoint().y, spring.getEndPoint().x - spring.getAnchorPoint().x);
+        const float angle = atan2(spring.getEndPoint().y - spring.getAnchorPoint().y, spring.getEndPoint().x - spring.getAnchorPoint().x);
         // get current offset
-        sf::Vector2f offset = spring.getAnchorPoint() - spring.getEndPoint();
+        const sf::Vector2f offset = spring.getAnchorPoint() - spring.getEndPoint();
         // get angle (in radians) between previous offset and current offset
         float delta = getSignedAngle(preOffset, offset);
         // update torque spring angle
